@@ -1,8 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-html, body{
-  background-color: rgb(34,36, 36);
-  min-height: 100%;
-}
