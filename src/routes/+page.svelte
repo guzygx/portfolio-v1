@@ -1,1 +1,5 @@
-<h1 class="text-orange-400">KIKOU</h1>
+<script>
+	import LandingPage from "$lib/LandingPage/LandingPage.svelte";
+</script>
+
+<LandingPage />
