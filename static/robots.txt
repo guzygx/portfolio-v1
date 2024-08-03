@@ -1,0 +1,16 @@
+User-agent: *
+
+Disallow: /*.js$
+Disallow: /*.json
+Disallow: /analytics.json
+Disallow: /current-visitors.json
+# Apparently having disallow on and endpoint 
+# and in the robots.txt means Google ignores both!
+# So we should allow everything?
+# Allow: /
+
+# Specific directives for GPTBot
+User-agent: GPTBot
+Disallow: /
+
+Sitemap: https://marierossi.garden/sitemap.xml

@@ -7,7 +7,7 @@
 
 <svelte:head>
 	<title>{title}X༙྇҉ ꓨ༙྇҉ H༙྇҉ ꓕ༙྇҉ ꓶ༙྇҉ ⅄༙྇҉ Z༙྇҉ ꓵ༙྇҉ ꓨ༙྇҉</title>
-	<meta name="Portfolio of digital artist Marie Rossi" />
+	<meta name="description" content="Portfolio of digital and sound artist Marie Rossi">
 </svelte:head>
 
 <slot />
