@@ -12,7 +12,7 @@
 
 <slot />
 
-<style>
+<style lang="postcss">
 	:global(html, body) {
 		background-color: rgb(34, 36, 36);
 		min-height: 100%;
