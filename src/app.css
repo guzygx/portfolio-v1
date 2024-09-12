@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html,
+body {
+  background-color: #4c730d;
+  min-height: 100%;
+  font-family: junicode;
+}
+
+@font-face {
+  font-family: 'standard-graf';
+  font-style: normal;
+  font-weight: 400;
+  src: local('standard-graf_regular'), url('src/lib/assets/fonts/standard-graf_regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'junicode';
+  font-style: normal;
+  font-weight: 400;
+  src: local('junicode_regular'), local('junicode_bold'), local('junicode_bold-italic'), url('src/lib/assets/fonts/junicode_regular.woff') format('woff');
+}

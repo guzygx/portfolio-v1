@@ -1,2 +1,5 @@
-<h1 class="text-orange-400">ABOUT</h1>
-<a href="/">Root</a>
+<script>
+	import Header from "$lib/components/Header/Header.svelte";
+</script>
+
+

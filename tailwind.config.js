@@ -2,6 +2,12 @@
 export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
+    colors: {
+      'green': '#4c730d',
+      'blue': '#2e3ed2',
+      'salmon': '#d27476',
+      'black': '#000000'
+    },
     extend: {},
   },
   plugins: [
