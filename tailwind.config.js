@@ -5,8 +5,9 @@ export default {
     colors: {
       'green': '#4c730d',
       'blue': '#2e3ed2',
-      'salmon': '#d27476',
-      'black': '#000000'
+      'salmon': '#D26566',
+      'black': '#000000',
+      'orange': '#96390e'
     },
     fontFamily: {
       'display': ['standard-graf'],
