@@ -8,6 +8,10 @@ export default {
       'salmon': '#d27476',
       'black': '#000000'
     },
+    fontFamily: {
+      'display': ['standard-graf'],
+      'body': ['junicode']
+    },
     extend: {},
   },
   plugins: [
