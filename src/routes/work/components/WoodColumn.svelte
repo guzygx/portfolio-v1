@@ -1,36 +1,12 @@
 <script>
-	import { tweened } from 'svelte/motion';
-	import { onMount } from 'svelte';
-
-	const woodblockHeight = tweened(0, {
-		duration: 200
-	});
-
-	$: woodblockHeightPercentage = `${$woodblockHeight}%`;
-
-	onMount(() => {
-		woodblockHeight.set(100);
-
-		return () => {
-			woodblockHeight.set(0);
-		};
-	});
+	import { slide } from 'svelte/transition';
 </script>
 
 <div
-	class="absolute text-5xl left-[320px] top-0 pointer-events-none overflow-hidden max-h-full growing"
-	style="--woodblock-height: {woodblockHeightPercentage}"
+	transition:slide={{ x: 1, duration: 500 }}
+	class="absolute text-5xl left-[320px] top-[2px] pointer-events-none overflow-hidden max-h-full"
 >
 	{#each Array(64) as _}
-		<p class="woodblock font-display">||</p>
+		<p class="font-display">||</p>
 	{/each}
 </div>
-
-<style>
-	.woodblock {
-		line-height: 0.5;
-	}
-	.growing {
-		height: var(--woodblock-height);
-	}
-</style>
