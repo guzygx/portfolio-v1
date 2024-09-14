@@ -2,11 +2,14 @@
 	import { pushState } from '$app/navigation';
 	import { page } from '$app/stores';
 	import Modal from '$lib/components/Modal/Modal.svelte';
-
-	let showModal = false;
+  import { browser } from '$app/environment';
+  if (browser) { 
+    window.location.href = '/work';
+}
+	// let showModal = false;
 </script>
 
-
+<!-- 
 <button on:click={() => (showModal = true)} class="text-2xl">(ฅ'ω'ฅ)</button>
 
 <Modal bind:showModal>
@@ -31,4 +34,5 @@
 	</ol>
 
 	<a href="https://www.merriam-webster.com/dictionary/modal">merriam-webster.com</a>
-</Modal>
+</Modal> -->
+

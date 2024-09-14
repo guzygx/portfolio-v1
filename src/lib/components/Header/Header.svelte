@@ -1,17 +1,16 @@
 <script>
-	import DottedLine from '$lib/components/DottedLine/DottedLine.svelte';
+	import DottedLine from './components/DottedLine.svelte';
+	import NavBar from './components/NavBar.svelte';
+	import Title from './components/Title.svelte';
+	import { page } from '$app/stores'; 
+
+	$: pathname = $page.url.pathname;
 </script>
 
-<div>
-	<header class="w-full flex justify-between py-0.5 font-display">
-		<h1 class="text-5xl">
-			<span>MARiE ROSSi ||</span>
-			<span class="hover:text-blue">abt</span>
-			<span>..</span>
-			<span class="hover:text-salmon">wrk</span>			
-			<span>..</span>
-			<span class="hover:text-orange">cntct</span>
-		</h1>
-	</header>
+<header class=" py-0.5 font-display text-5xl">
+	<div class="w-full min-[760px]:flex gap-10">
+		<Title />
+		<NavBar pathname={pathname}/> 
+	</div>
 	<DottedLine />
-</div>
+</header>
