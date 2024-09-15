@@ -3,7 +3,7 @@
 </script>
 
 <div
-	transition:slide={{ x: 1, duration: 500 }}
+	transition:slide={{ axis: 'y', duration: 400 }}
 	class="absolute text-5xl left-[320px] top-[2px] pointer-events-none overflow-hidden max-h-full"
 >
 	{#each Array(64) as _}

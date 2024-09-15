@@ -8,7 +8,7 @@
 	$: pathname = $page.url.pathname;
 </script>
 
-<header class=" py-0.5 font-display text-5xl">
+<header class=" py-0.5 font-display text-5xl fixed">
 	<div class="w-full min-[760px]:flex gap-3.5">
 		<Title />
 		<Separator />
