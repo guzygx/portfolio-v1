@@ -10,20 +10,18 @@
 	on:click|self={() => dialog.close()}
 >
 	<div on:click|stopPropagation>
-		<slot name="header" />
-		<hr />
 		<slot />
-		<hr />
-		<button autofocus on:click={() => dialog.close()}>close modal</button>
 	</div>
 </dialog>
 
 <style>
 	dialog {
-		max-width: 32em;
 		border-radius: 0.2em;
 		border: none;
 		padding: 0;
+		min-width:90vw;
+		min-height:70vh;
+		background-color: #eee;
 	}
 	dialog::backdrop {
 		background: rgba(0, 0, 0, 0.3);

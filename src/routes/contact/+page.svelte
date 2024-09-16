@@ -4,18 +4,18 @@
 </script>
 
 <div
-	class="w-full h-screen"
+	class="w-full h-screen text-invert flex justify-center font-display"
 	in:rightSlide
 	out:backSlide
 >
-	<div class="overflow-scroll no-scrollbar p-12 ml-96">
-		<p class=" text-6xl font-display">
+	<div class="overflow-scroll no-scrollbar pt-12 text-6xl max-[980px]:text-5xl max-[760px]:text-4xl max-[480px]:text-3xl">
+		<p class="mb-4">
 			<span>{content.email_title}:</span>
-			<span>{content.email}</span>
+			<span><a href="mailto:gxuzxu@protonmail.com" class="text-bright-blue">{content.email}</a></span>
 		</p>
-		<p class=" text-6xl font-display">
+		<p>
 			<span>{content.instagram_title}:</span>
-			<span>{content.instagram}</span>
+			<span><a href="https://www.instagram.com/gxuzxu" class="text-salmon">{content.instagram}</a></span>
 		</p>
 	</div>
 </div>

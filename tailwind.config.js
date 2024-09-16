@@ -8,7 +8,13 @@ export default {
       'salmon': '#D26566',
       'black': '#000000',
       'orange': '#96390e',
-      'grey': '#373737'
+      'grey': '#373737',
+      'white': '#ffffff',
+      'purple': '#5c03c8',
+      'bright-green': '#95ff2b',
+      'bright-blue': '#03b8ff',
+      'pink': '#ff309b',
+      'offwhite': '#eee'
 
     },
     fontFamily: {

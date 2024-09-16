@@ -17,8 +17,18 @@
 	/>
 </svelte:head>
 
-<Header />
-<Main>
-	<slot />
-</Main>
-<Footer />
+<div class="container h-screen w-screen overflow-hidden">
+	<Header />
+	<Main>
+		<slot />
+	</Main>
+	<Footer />
+</div>
+
+<style>
+	.container {
+		background-image: url('$lib/assets/images/landing.png');
+		background-position: center;
+		min-width: 100vw;
+	}
+</style>
