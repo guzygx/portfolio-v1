@@ -7,7 +7,9 @@ export default {
       'blue': '#2e3ed2',
       'salmon': '#D26566',
       'black': '#000000',
-      'orange': '#96390e'
+      'orange': '#96390e',
+      'grey': '#373737'
+
     },
     fontFamily: {
       'display': ['standard-graf'],

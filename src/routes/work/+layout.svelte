@@ -7,7 +7,7 @@
 <div class="max-[760px]:hidden">
 	<div class="pt-24 font-display">
 		<SideBar />
-		<WoodColumn />
+		<!-- <WoodColumn /> -->
 		<Content>
 			<slot />
 		</Content>
