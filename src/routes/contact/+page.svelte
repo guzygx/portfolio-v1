@@ -4,16 +4,18 @@
 </script>
 
 <div
-	class="w-full h-screen overflow-hidden"
+	class="w-full h-screen"
 	in:rightSlide
 	out:backSlide
 >
-	<p class=" text-6xl font-display mt-40 ml-96">
-		<span>{content.email_title}:</span>
-		<span>{content.email}</span>
-	</p>
-	<p class=" text-6xl font-display mt-8 ml-96">
-		<span>{content.instagram_title}:</span>
-		<span>{content.instagram}</span>
-	</p>
+	<div class="overflow-scroll no-scrollbar p-12 ml-96">
+		<p class=" text-6xl font-display">
+			<span>{content.email_title}:</span>
+			<span>{content.email}</span>
+		</p>
+		<p class=" text-6xl font-display">
+			<span>{content.instagram_title}:</span>
+			<span>{content.instagram}</span>
+		</p>
+	</div>
 </div>
