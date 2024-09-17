@@ -4,9 +4,11 @@
 </script>
 
 <div
-	class="w-full h-screen flex justify-center overflow-hidden"
+	class="w-full h-screen min-[480px]:p-12 no-scrollbar text-bright-green text-invert flex justify-center overflow-scroll no-scrollbar"
 	in:rightSlide
 	out:backSlide
 >
-	<p class=" text-6xl font-display w-6/12 mt-28 ml-60">{content.description}</p>
+	<p class=" text-6xl font-display w-6/12 max-[760px]:w-9/12 max-[480px]:w-screen">
+		{content.description}
+	</p>
 </div>

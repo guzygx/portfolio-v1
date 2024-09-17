@@ -22,3 +22,27 @@ body {
   font-weight: 400;
   src: local('junicode_regular'), local('junicode_bold'), local('junicode_bold-italic'), url('$lib/assets/fonts/junicode_regular.woff') format('woff');
 }
+
+.no-scrollbar {
+  overflow-y: scroll;
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  /* WebKit */
+  width: 0;
+  height: 0;
+}
+
+.text-invert {
+  filter: invert(1);
+  mix-blend-mode: difference;
+}
+
+.text-outline {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
