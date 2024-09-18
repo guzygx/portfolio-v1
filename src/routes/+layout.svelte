@@ -27,7 +27,7 @@
 
 <style>
 	.container {
-		background-image: url('https://gx-public-assets.lon1.cdn.digitaloceanspaces.com/portfolio-v1/images/landing/landing.png');
+		background-image: url('https://gx-public-assets.lon1.cdn.digitaloceanspaces.com/portfolio-v1/images/landing/landing.webp');
 		background-position: center;
 		min-width: 100vw;
 	}
