@@ -12,14 +12,14 @@
 </script>
 
 <dialog
-	class="flex"
+	class="flex max-w-[90%] max-h-[70%] p-6"
 	bind:this={dialog}
 	on:close={() => (showModal = false)}
 	on:click|self={() => redirectToRoot()}
 >
 	<div
 		on:click|stopPropagation
-		class="min-h-full min-w-full"
+		class="min-h-full min-w-full overflow-scroll no-scrollbar"
 	>
 		<slot />
 	</div>
@@ -29,7 +29,6 @@
 	dialog {
 		border-radius: 0.2em;
 		border: none;
-		padding: 0;
 		min-width: 90vw;
 		min-height: 70vh;
 		background-color: #eee;
