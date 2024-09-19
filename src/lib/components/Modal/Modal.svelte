@@ -12,7 +12,7 @@
 </script>
 
 <dialog
-	class="flex max-w-[90%] max-h-[70%] p-6"
+	class="flex max-w-[90%] max-h-[90%] p-6"
 	bind:this={dialog}
 	on:close={() => (showModal = false)}
 	on:click|self={() => redirectToRoot()}

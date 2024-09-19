@@ -2,6 +2,6 @@
   export let source = "";
 </script>
 
-<video controls>
+<video controls tabindex='-1' >
   <source src={source} type="video/mp4">
 </video> 

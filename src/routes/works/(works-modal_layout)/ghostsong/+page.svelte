@@ -4,7 +4,24 @@
 	export let data;
 	let {
 		content: {
-			en: { description_1, description_2, materials }
+			en: {
+				description_1,
+				description_2,
+				materials,
+				including,
+				irubor,
+				michelle,
+				jones,
+				tyers,
+				grimmie,
+				emmanNimedeztv,
+				stone,
+				odell,
+				mendonca,
+				janice,
+				honey,
+				sobiech
+			}
 		}
 	} = data;
 
@@ -21,7 +38,8 @@
 		'https://gx-public-assets.lon1.cdn.digitaloceanspaces.com/images/ghostsong/20240618_143049.webp',
 		'https://gx-public-assets.lon1.cdn.digitaloceanspaces.com/images/ghostsong/_DSC3244.webp',
 		'https://gx-public-assets.lon1.cdn.digitaloceanspaces.com/images/ghostsong/_DSC3255.webp',
-		'https://gx-public-assets.lon1.cdn.digitaloceanspaces.com/images/ghostsong/ghostsong_data.webp'
+		'https://gx-public-assets.lon1.cdn.digitaloceanspaces.com/images/ghostsong/ghostsong_data.webp',
+		'https://gx-public-assets.lon1.cdn.digitaloceanspaces.com/images/ghostsong/_DSC1999.webp'
 	];
 
 	let phones = [
@@ -70,20 +88,31 @@
 		src={phones[5]}
 		alt="christina grimmie phone"
 	/>
-	<img
-		class="col-span-2"
-		src={photos[3]}
-		alt="GhostSong captation"
-	/>
+	<div class="flex flex-col col-span-2">
+		<img
+			class="h-full object-cover"
+			src={photos[3]}
+			alt="GhostSong captation"
+		/>
+	</div>
 	<div class="flex flex-col justify-between gap-4 col-span-2">
-		<p class="text-3xl">{description_1}</p>
+		<div>
+			<p class="text-6xl">{description_1}</p>
+			<p class="text-2xl">{description_2}</p>
+		</div>
 		<img
 			src={photos[8]}
 			alt="GhostSong captation"
 		/>
 	</div>
 	<div class="col-span-2 flex flex-col justify-between gap-4">
-		<VideoPlayer source={videos.edit} />
+		<div class="flex grow">
+			<img
+				class="object-cover"
+				src={photos[6]}
+				alt="GhostSong captation"
+			/>
+		</div>
 		<div class="flex grow">
 			<img
 				class="object-cover"
@@ -91,27 +120,56 @@
 				alt="GhostSong captation"
 			/>
 		</div>
+		<div>
+			<p class="text-xl">{including}</p>
+			<div class="flex justify-between gap-4">
+				<div>
+					<p>{irubor}</p>
+					<p>{michelle}</p>
+					<p>{jones}</p>
+				</div>
+				<div>
+					<p>{tyers}</p>
+					<p>{grimmie}</p>
+					<p>{emmanNimedeztv}</p>
+				</div>
+				<div>
+					<p>{stone}</p>
+					<p>{odell}</p>
+					<p>{mendonca}</p>
+				</div>
+				<div>
+					<p>{janice}</p>
+					<p>{honey}</p>
+					<p>{sobiech}</p>
+				</div>
+			</div>
+		</div>
+		<div class="flex grow">
+			<img
+				class="object-cover"
+				src={photos[9]}
+				alt="GhostSong captation"
+			/>
+		</div>
+	</div>
+	<div class="flex flex-col">
 		<img
-			src={photos[6]}
+			class="h-full object-cover"
+			src={photos[4]}
 			alt="GhostSong captation"
 		/>
 	</div>
-	<img
-		src={photos[4]}
-		alt="GhostSong captation"
-	/>
-	<p class="text-2xl col-span-3">{description_2}</p>
-	<div class="flex">
+	<div class="col-span-4">
+		<VideoPlayer source={videos.edit} />
+	</div>
+	<div class="flex flex-col">
 		<img
-			class="object-cover"
-			src={photos[0]}
+			class="h-full object-cover"
+			src={photos[5]}
 			alt="GhostSong captation"
 		/>
 	</div>
-	<img
-		src={photos[5]}
-		alt="GhostSong captation"
-	/>
 	<img
 		src={phones[0]}
 		alt="alena irubor phone"
@@ -130,7 +188,7 @@
 	/>
 	<img
 		src={phones[10]}
-		alt="christina grimmie phone"
+		alt="swedish honey phone"
 	/>
 	<img
 		src={phones[11]}
