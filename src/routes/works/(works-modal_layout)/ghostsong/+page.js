@@ -3,7 +3,8 @@ export function load({ params }) {
     content: {
       en: {
         materials: 'Marble column, headphones, microcontrollers, MaxMSP, foam and paper',
-        description_1: ``
+        description_1: `Ohlalala`,
+        description_2: `Blablaaaa`
       }
     }
   }
