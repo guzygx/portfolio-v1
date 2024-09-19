@@ -10,7 +10,7 @@
 
 	let videos = {
 		captationJuin:
-			'https://gx-public-assets.lon1.cdn.digitaloceanspaces.com/videos/Captation%20Juin%202024%20Compressed%203.mp4'
+			'https://gx-public-assets.lon1.cdn.digitaloceanspaces.com/videos/echosystem/Captation%20Juin%202024%20Compressed%203.mp4'
 	};
 	let photos = [
 		'https://gx-public-assets.lon1.cdn.digitaloceanspaces.com/images/echosystem/20240618_175855.jpg',
