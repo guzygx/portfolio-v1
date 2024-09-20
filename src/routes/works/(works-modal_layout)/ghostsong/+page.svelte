@@ -124,22 +124,22 @@
 			<p class="text-xl">{including}</p>
 			<div class="flex justify-between gap-4">
 				<div>
-					<p>{irubor}</p>
 					<p>{michelle}</p>
+					<p>{irubor}</p>
 					<p>{jones}</p>
 				</div>
 				<div>
 					<p>{tyers}</p>
+					<p>{janice}</p>
 					<p>{grimmie}</p>
-					<p>{emmanNimedeztv}</p>
 				</div>
 				<div>
+					<p>{emmanNimedeztv}</p>
 					<p>{stone}</p>
 					<p>{odell}</p>
-					<p>{mendonca}</p>
 				</div>
 				<div>
-					<p>{janice}</p>
+					<p>{mendonca}</p>
 					<p>{honey}</p>
 					<p>{sobiech}</p>
 				</div>
