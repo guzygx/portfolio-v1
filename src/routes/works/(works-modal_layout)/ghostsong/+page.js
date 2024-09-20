@@ -19,7 +19,7 @@ export function load({ params }) {
         jones: 'Austin Jones',
         tyers: 'Bill Tyers',
         grimmie: 'Christina Grimmie',
-        emmanNimedeztv: 'EmmannimedezTV',
+        emmanNimedeztv: 'EmmanNimedezTV',
         stone: 'Hannah Stone',
         odell: 'Jackson Odell',
         mendonca: 'Marília Mendonça',
