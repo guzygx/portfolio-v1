@@ -26,7 +26,7 @@
 	} = data;
 
 	let videos = {
-		edit: 'https://gx-public-assets.lon1.cdn.digitaloceanspaces.com/videos/echosystem/Captation%20Juin%202024%20Compressed%203.mp4'
+		edit: 'https://gx-public-assets.lon1.cdn.digitaloceanspaces.com/videos/ghostsong/export%201%20web%202.mp4'
 	};
 
 	let photos = [
