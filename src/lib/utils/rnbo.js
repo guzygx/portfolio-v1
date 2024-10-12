@@ -57,13 +57,11 @@ const createDeviceInstance = (devicePath, context, output) => {
       })
       .then(device => {
         device.node.connect(output);
-        device.messageEvent.subscribe(e => {
+        // device.messageEvent.subscribe(e => {
           // if (e.tag.includes('debug')) {
           // console.log(e.tag, e.payload);
           // }
-          if (e.tag === "out2") console.log(e.tag, e.payload);
-
-        });
+        // });
         if (device) {
           resolve(device);
         } else {
