@@ -1,6 +1,18 @@
 <script>
-	export let intervalOutputNumber, intervalOutputNote;
+	export let device;
+
+	let intervalOutputNumber, intervalOutputNote;
 	$: intervalOutputNote = getNote(intervalOutputNumber);
+
+	$: device && subscribe();
+
+	const subscribe = () => {
+		device.messageEvent.subscribe((e) => {
+			if (e.tag === 'out2') {
+				intervalOutputNumber = e.payload;
+			}
+		});
+	};
 
 	const getNote = (number) => {
 		const notesIndex = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];

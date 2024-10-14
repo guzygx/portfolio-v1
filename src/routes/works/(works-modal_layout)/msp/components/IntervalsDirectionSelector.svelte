@@ -1,8 +1,8 @@
 <script>
 	import { sendDeviceMessage } from '$lib/utils/rnbo';
 
-  export let device;
-  let intervalDirection = "0";
+	export let device;
+	let intervalDirection = '0';
 </script>
 
 <select

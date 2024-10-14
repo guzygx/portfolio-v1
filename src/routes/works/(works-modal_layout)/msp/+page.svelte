@@ -9,16 +9,10 @@
 
 	let active = false;
 	let intervals;
-	let intervalOutputNumber;
 
 	const start = async () => {
 		active = true;
 		intervals = await initIntervalsDevice();
-		intervals.messageEvent.subscribe((e) => {
-			if (e.tag === 'out2') {
-				intervalOutputNumber = e.payload;
-			}
-		});
 	};
 </script>
 
@@ -32,7 +26,7 @@
 			<IntervalsDirectionSelector device={intervals} />
 		</div>
 
-		<IntervalsNoteOutput intervalOutputNumber={intervalOutputNumber} />
+		<IntervalsNoteOutput device={intervals} />
 	</div>
 {:else}
 	<button on:click={start}>►</button>
